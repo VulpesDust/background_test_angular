@@ -9,7 +9,8 @@
  */
 
 html {
-  line-height: 1.15; /* 1 */
+  // а вот было бы font-size 16px, а не 17px, было бы красивее
+  line-height: 1.294117647058824; // 22px; // 1.15; /* 1 */ // 1.294117647058824
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -164,7 +165,7 @@ select,
 textarea {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
+  line-height: var(--line-height); // 22px; // 1.15; /* 1 */
   margin: 0; /* 2 */
 }
 
