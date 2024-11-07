@@ -1,0 +1,22 @@
+
+button {
+  color: #000000;
+  border: none;
+
+  &:disabled {
+    opacity: 0.4;
+  }
+
+  &.main {
+    padding: 14px 30px;
+  }
+
+  &.accent {
+    background-color: var(--main-color);
+    border-radius: 3px;
+
+    &:not(:disabled):hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
