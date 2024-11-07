@@ -1,1 +1,42 @@
-@import "normalize";
+@import "normalize", "my-normalize", "font", "flex", "button";
+
+html {
+  background: #ffffff;
+  color: #000000;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 17px; // 17px не лучший выбор, самый лучший 16px
+}
+
+:root {
+  --main-color: #FFE783;
+  --selected-color: #FFDA42;
+  --light-gray-color: #C3C3C3;
+  --gray-color: #9D9D9D;
+
+  --border-color: var(--light-gray-color);
+  --placeholder-color: var(--gray-color);
+
+
+  --label-width: 140px;
+  --base-width: 500px;
+  --medium-width: 300px;
+
+  --line-height: 22px;
+  --form-x-gap: 17px; // 10px checkboxes
+  --form-y-gap: 15px;
+
+
+  --border: solid 1px var(--border-color);
+  --border-radius: 3px;
+}
+
+label.form {
+  display: block;
+  width: var(--label-width);
+  min-height: 1.5rem;
+  margin: 13px 17px 0 13px;
+  &.required:after {
+    content:"*";
+    color: red;
+  }
+}
