@@ -1,0 +1,78 @@
+.test-select-dropdown-container {
+  position: relative;
+
+  .test-select-dropdown {
+    position: absolute;
+    z-index: 1;
+    top: calc(var(--line-height) * 2 + 3px);
+    width: var(--medium-width);
+    max-height: 255px;
+    overflow-y: auto;
+    padding: 8px 0;
+    row-gap: 7px; // по макету 7.5 px, но видимо макет на скорую руку делался
+
+    // box-shadow шедоу не такой гибкий, поэтому как на макете не получится, а делать его через второй тег слишком кастыльно
+    --box-shadow: 2px 3px 4px 2px #00000029;
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+
+    &.hidden {
+
+      z-index: -1;
+      opacity: 0;
+    }
+
+    button.test-select-choice-button {
+      height: 26px;
+      padding-left: 14px;
+
+      cursor: pointer;
+      text-align: left;
+      background-color: #ffffff;
+
+      &.selected {
+        background-color: var(--selected-color);
+      }
+
+      &:not(&.selected):hover {
+        background-color: var(--main-color);
+      }
+    }
+  }
+}
+
+button.test-select-dropdown-button {
+  position: relative;
+  width: var(--medium-width);
+  height: calc(var(--line-height) * 2);
+  padding-left: 14px;
+  padding-right: calc(var(--line-height) * 2);
+
+  cursor: pointer;
+
+  text-align: left;
+  background-color: initial;
+  border: var(--border);
+  border-radius: var(--border-radius);
+
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: calc(var(--line-height) * 2);
+
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml,<svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1421 1.07107L8.07104 8.14214L0.999977 1.07107" stroke="black"/></svg>');
+  }
+}
