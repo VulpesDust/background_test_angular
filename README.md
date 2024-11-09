@@ -9,4 +9,23 @@ This work is licensed under a
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
+<br>
+<br>
+npm -v -> 10.2.4 <br>
+ng v -> Angular CLI: 18.2.11 <br>
+
+[//]: # (&#40;  git clone https://github.com/VulpesDust/background_test_angular  &#41;)
+
+<br>
+<br>
+After clone:
+
+CMD: <br>
+cd background_test_angular <br>
+```
+npm install
+```
+```
+npm start
+```
 
