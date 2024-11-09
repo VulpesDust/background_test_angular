@@ -1,0 +1,13 @@
+{
+  "input2": null,
+  "multiinput1_0": "1",
+  "select": "Не женат / не замужем",
+  "select1": "выбор1",
+  "select2": [
+    "выбор1",
+    "выбор2",
+    "выбор3"
+  ],
+  "select3": null,
+  "select4": null
+}

@@ -1,0 +1,21 @@
+{
+  "input1": "1",
+  "input2": null,
+  "input3": null,
+  "multiinput1_0": "1",
+  "multiinput2_0": null,
+  "select1": "выбор1",
+  "number1": 1,
+  "number2": null,
+  "number3": null,
+  "checkboxes1checkbox1": true,
+  "checkboxes1checkbox2": null,
+  "checkboxes2checkbox1": true,
+  "checkboxes2checkbox2": null,
+  "checkboxes3checkbox1": null,
+  "checkboxes3checkbox2": null,
+  "checkboxes3checkbox3": null,
+  "checkboxes3checkbox4": null,
+  "checkboxes3checkbox5": null,
+  "checkboxes3select-all": null
+}
