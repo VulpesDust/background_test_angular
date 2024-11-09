@@ -1,0 +1,151 @@
+{
+  "header": "Анкета",
+  "description": "TODO надо ли тут",
+  "form": [
+    {
+      "type": "input",
+      "form-id": "input1",
+      "label": "Инпут 1",
+      "required": true,
+
+      "placeholder": "placeholder",
+      "description": "description description description description description description description description"
+    },
+    {
+      "type": "input",
+      "form-id": "input2",
+      "label": "Инпут 2",
+      "required": false
+    },
+    {
+      "type": "input",
+      "form-id": "input3",
+      "label": "Инпут 3"
+    },
+
+
+
+    {
+      "type": "input",
+      "multiplicity": true,
+      "form-id": "multiinput1_",
+      "label": "multiinput 1",
+      "required": true,
+
+      "placeholder": "placeholder",
+      "description": "description description description description description description description description"
+    },
+    {
+      "type": "input",
+      "multiplicity": true,
+      "form-id": "multiinput2_",
+      "label": "multiinput 2"
+    },
+
+
+
+    {
+      "type": "select",
+      "form-id": "select1",
+      "label": "Селект 1",
+      "required": true,
+
+      "description": "description description description description description description description description",
+
+      "choices": [
+        "выбор1",
+        "выбор2",
+        "выбор3",
+        "выбор1 выбор1 выбор1"
+      ]
+    },
+
+
+
+    {
+      "type": "number",
+      "form-id": "number1",
+      "label": "Намбер 1",
+      "required": true,
+
+      "placeholder": "ph",
+      "description": "description description description description description description description description"
+    },
+    {
+      "type": "number",
+      "form-id": "number2",
+      "label": "Намбер 2",
+      "required": false
+    },
+    {
+      "type": "number",
+      "form-id": "number3",
+      "label": "Намбер 3"
+    },
+
+
+
+    {
+      "type": "checkboxes",
+      "form-id": "checkboxes1",
+      "label": "Выбрать хотя бы один",
+      "required": true,
+      "description": "description description description description description description description description",
+      "choices": [
+        {
+          "form-id": "checkbox1",
+          "label": "1",
+          "required": false
+        },
+        {
+          "form-id": "checkbox2",
+          "label": "2"
+        }
+      ]
+    },
+    {
+      "type": "checkboxes",
+      "form-id": "checkboxes2",
+      "label": "Один обязательный",
+      "choices": [
+        {
+          "form-id": "checkbox1",
+          "label": "1",
+          "required": true
+        },
+        {
+          "form-id": "checkbox2",
+          "label": "2"
+        }
+      ]
+    },
+    {
+      "type": "checkboxes",
+      "form-id": "checkboxes3",
+      "label": "Не обязательные все",
+      "select-all-button": true,
+      "choices": [
+        {
+          "form-id": "checkbox1",
+          "label": "не обязательный"
+        },
+        {
+          "form-id": "checkbox2",
+          "label": "не обязательный 2"
+        },
+        {
+          "form-id": "checkbox3",
+          "label": "не обязательный 3"
+        },
+        {
+          "form-id": "checkbox4",
+          "label": "не обязательный 4"
+        },
+        {
+          "form-id": "checkbox5",
+          "label": "не обязательный 5"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "header": "Анкета",
+  "description": "TODO надо ли тут",
+  "form": [
+    {
+      "type": "input",
+      "form-id": "input2",
+      "label": "Инпут 2",
+      "required": false
+    },
+    {
+      "type": "input",
+      "multiplicity": true,
+      "form-id": "multiinput1_",
+      "label": "multiinput 1",
+      "required": true,
+
+      "placeholder": "placeholder",
+      "description": "description description description description description description description description"
+    },
+
+
+
+    {
+      "type": "select",
+      "form-id": "select",
+      "label": "select-one",
+      "required": true,
+      "not-nullable-and-select-one": true,
+
+      "description": "description description description description description description description description",
+
+      "choices": [
+        "Не женат / не замужем",
+        "Женат / замужем"
+      ]
+    },
+    {
+      "type": "select",
+      "form-id": "select1",
+      "label": "Селект 1",
+      "required": true,
+
+      "description": "description description description description description description description description",
+
+      "choices": [
+        "выбор1",
+        "выбор2",
+        "выбор3",
+        "выбор1 выбор1 выбор1"
+      ]
+    },
+    {
+      "type": "select",
+      "form-id": "select2",
+      "label": "multiselect 2",
+      "required": true,
+      "multiselect": true,
+
+      "choices": [
+        "выбор1",
+        "выбор2",
+        "выбор3",
+        "выбор4",
+        "выбор5",
+        "выбор6",
+        "выбор7",
+        "выбор8",
+        "выбор9",
+        "выбор10"
+      ]
+    },
+
+    {
+      "type": "select",
+      "form-id": "select3",
+      "label": "Селект 3",
+
+      "choices": [
+        "выбор1",
+        "выбор2",
+        "выбор3",
+        "выбор1 выбор1 выбор1"
+      ]
+    },
+    {
+      "type": "select",
+      "form-id": "select4",
+      "label": "multiselect 4",
+      "multiselect": true,
+
+      "choices": [
+        "выбор1",
+        "выбор2",
+        "выбор3",
+        "выбор4",
+        "выбор5",
+        "выбор6",
+        "выбор7",
+        "выбор8",
+        "выбор9",
+        "выбор10"
+      ]
+    }
+  ]
+}
