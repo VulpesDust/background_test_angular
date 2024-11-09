@@ -1,1 +1,27 @@
-<p>test-checkbox works!</p>
+<div class="flex col">
+  <div [formGroup]="formGroup" class="flex wrap form-gap-y justify-space-between">
+    @if (el['choices']) {
+      @for (checkbox of el['choices']; track checkbox['form-id']) {
+        <label class="test-checkbox" [ngClass]="{'required': checkbox['required']}">
+          <input type="checkbox"
+                 [formControlName]="el['form-id'] + checkbox['form-id']"
+                 [required]="checkbox['required']"
+                 (change)="onChange()">
+          <i></i>
+          {{ checkbox['label'] }}
+        </label>
+      }
+
+      @if (el['select-all-button']) {
+        <label class="test-checkbox">
+          <input type="checkbox" [formControlName]="el['form-id'] + selectAllSuffix" (change)="onChangeSelectAll()">
+          <i></i>
+          <b>Выделить все</b>
+        </label>
+      }
+    }
+  </div>
+  @if (el['description']) {
+    <label class="description">{{ el['description'] }}</label>
+  }
+</div>
