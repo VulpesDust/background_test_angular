@@ -8,12 +8,17 @@ button {
   }
 
   &.main {
-    padding: 14px 30px;
+    padding: 15px 30px;
   }
 
   &.accent {
     background-color: var(--main-color);
     border-radius: 3px;
+
+    --box-shadow: 0px 1px 0px 0px #C7B258;
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
 
     &:not(:disabled):hover {
       color: rgba(0, 0, 0, 0.7);
