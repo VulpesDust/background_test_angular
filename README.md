@@ -22,7 +22,7 @@ After clone:<br>
 
 CMD:
 ```
-cd background_test_angular <br>
+cd background_test_angular
 ```
 ```
 npm install
