@@ -1,6 +1,5 @@
 {
   "header": "Анкета",
-  "description": "TODO надо ли тут",
   "form": [
     {
       "type": "input",
