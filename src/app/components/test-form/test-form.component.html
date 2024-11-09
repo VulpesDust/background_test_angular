@@ -1,0 +1,45 @@
+<div class="test-form flex justify-center">
+  @if (form && form.form) {
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+      <h1 class="test-form-header">{{ form['header'] }}</h1>
+
+      <div class="flex col form-gap-y">
+        @for (el of form.form; track el['form-id']) {
+          <div class="flex form-gap-x">
+            <label class="test-form-label" [ngClass]="{'required': el['required']}">{{ el['label'] }}</label>
+            <div class="test-form-field">
+              @switch (el['type']) {
+                @case ('input') {
+                  <app-test-input [formGroup]="formGroup" [el]="el" (ngOnInit)="addTestInput($event)"></app-test-input>
+                }
+                @case ('select') {
+                  <app-test-select [formGroup]="formGroup" [el]="el"></app-test-select>
+                }
+                @case ('number') {
+                  <app-test-number [formGroup]="formGroup" [el]="el"></app-test-number>
+                }
+                @case ('checkboxes') {
+                  <app-test-checkbox [formGroup]="formGroup" [el]="el"></app-test-checkbox>
+                }
+              }
+            </div>
+          </div>
+        }
+      </div>
+
+      <div class="flex form-gap-x" style="margin-top: 36px">
+        <label class="test-form-label"></label>
+
+        <button type="submit"
+                class="main accent"
+                [disabled]="!formGroup.valid">
+          Отправить
+        </button>
+
+        <button type="button" class="main accent" (click)="onLoad('result1')">
+          load result1
+        </button>
+      </div>
+    </form>
+  }
+</div>
