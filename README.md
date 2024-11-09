@@ -18,10 +18,12 @@ ng v -> Angular CLI: 18.2.11 <br>
 
 <br>
 <br>
-After clone:
+After clone:<br>
 
-CMD: <br>
+CMD:
+```
 cd background_test_angular <br>
+```
 ```
 npm install
 ```
