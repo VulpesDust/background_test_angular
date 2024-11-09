@@ -1,1 +1,25 @@
-<p>test-number works!</p>
+<div class="flex col">
+  <div class="flex" style="gap: 0.5rem">
+    <ng-container [formGroup]="formGroup" >
+      <input type="number"
+             class="test-number"
+             [formControlName]="el['form-id']"
+             [placeholder]="el['placeholder']"
+             [required]="el['required']"
+      >
+    </ng-container>
+
+    <div class="flex col">
+      <button type="button" class="test-number-plus flex center" (click)="add(1)">
+        <img src="/svg/arrow-up.svg" alt="arrow-up">
+      </button>
+      <button type="button" class="test-number-minus flex center" (click)="add(-1)">
+        <img src="/svg/arrow-down.svg" alt="arrow-down">
+      </button>
+    </div>
+  </div>
+
+  @if (el['description']) {
+    <label class="description">{{ el['description'] }}</label>
+  }
+</div>
