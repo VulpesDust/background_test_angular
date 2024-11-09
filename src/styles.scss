@@ -15,6 +15,7 @@ html {
 
   --border-color: var(--light-gray-color);
   --placeholder-color: var(--gray-color);
+  --description-color: var(--gray-color);
 
 
   --label-width: 140px;
@@ -22,21 +23,56 @@ html {
   --medium-width: 300px;
 
   --line-height: 22px;
-  --form-x-gap: 17px; // 10px checkboxes
-  --form-y-gap: 15px;
+  --form-gap-x: 17px; // 10px checkboxes
+  --form-gap-y: 15px;
 
 
   --border: solid 1px var(--border-color);
   --border-radius: 3px;
 }
 
-label.form {
+label.test-form-label {
   display: block;
   width: var(--label-width);
   min-height: 1.5rem;
-  margin: 13px 17px 0 13px;
-  &.required:after {
-    content:"*";
+  margin: 13px 0 0 13px;
+}
+
+label.required:after {
+  content:"*";
+  color: red;
+}
+
+label.description, label.error {
+  min-height: 24px;
+  margin-top: 9px;
+
+  line-height: 16.82px;
+  font-size: 13px;
+
+  &.description {
+    color: var(--description-color);
+  }
+
+  &.error {
     color: red;
   }
+}
+
+
+
+.test-form-field {
+  width: var(--base-width);
+}
+
+.form-gap-x {
+  column-gap: var(--form-gap-x);
+}
+
+.form-gap-y {
+  row-gap: var(--form-gap-y);
+}
+
+.medium-width {
+  width: var(--medium-width);
 }
