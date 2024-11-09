@@ -1,1 +1,34 @@
-<p>test-input works!</p>
+<div class="flex col" [formGroup]="formGroup">
+  @if (!el['multiplicity']) {
+    <input type="text"
+           class="test-input"
+           [formControlName]="el['form-id']"
+           [placeholder]="el['placeholder']"
+           [required]="el['required']"
+    >
+  } @else {
+    <div class="flex col form-gap-y">
+      @for (_ of Array(size); track $index) {
+        <div class="flex align-center">
+          <input type="text"
+                 class="test-input multiplicity"
+                 [formControlName]="el['form-id'] + $index"
+                 [placeholder]="el['placeholder']"
+                 [required]="el['required']"
+          >
+          @if ($last) {
+            @if (!$first) {
+              <img class="round-button" (click)="removeLast()" src="/svg/button-remove.svg" alt="button-remove">
+            }
+            <img class="round-button" (click)="addField()" src="/svg/button-add.svg" alt="button-add">
+            <label (click)="addField()">Добавить еще</label>
+          }
+        </div>
+      }
+    </div>
+
+  }
+  @if (el['description']) {
+    <label class="description">{{ el['description'] }}</label>
+  }
+</div>
